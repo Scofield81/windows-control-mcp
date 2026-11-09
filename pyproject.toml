@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "windows-control-mcp"
+version = "0.1.0"
+description = "Local Windows computer-control MCP server with native SAFE/NORMAL/ADMIN gates."
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "pywin32>=306",
+]
+
+[project.scripts]
+windows-control-mcp = "windows_control_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

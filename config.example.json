@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "windows-control-mcp": {
+      "command": "C:\\WindowsControlMCP\\scripts\\run_windows_control_mcp.cmd",
+      "args": [],
+      "env": {
+        "WINDOWS_CONTROL_MODE": "SAFE",
+        "WINDOWS_CONTROL_AUTO_APPROVE": "0",
+        "WINDOWS_CONTROL_EXECUTION_POLICY": "restricted",
+        "WINDOWS_CONTROL_BROKER_TRANSPORT": "service"
+      }
+    }
+  }
+}
